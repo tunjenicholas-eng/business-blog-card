@@ -1,0 +1,123 @@
+ 
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        background-color: #F2F5F9;
+        margin: 0.5rem;
+    }
+
+    .card-container{
+        max-width: calc(27.62rem - 1.25rem);
+        background-color: #FFFFFF;
+        margin: 0.5rem auto;
+        border-radius: 12px;
+        position: relative;
+    }
+    
+    .hero-img {
+        border-radius: 12px 12px 0px 0px;
+      }
+
+      .card-header{
+        background-color: #FFFFFF;
+        /* margin: 1.2rem 0rem; */
+        /* border: 2px solid red; */
+      }
+
+      .card-header .overlay-img{
+        position: absolute;
+        top: 11rem;
+        /* top: 9.375rem; */
+        /* top: clamp(6.25rem, 9.375rem, 13.47rem); */
+        /* top: 100px; */
+        /* top: 13.47rem; */
+        /* border: 2px solid red; */
+      }
+
+      .card-header h1{
+        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        margin: 1rem ;
+        color: #111729;
+        /* border: 2px solid red; */
+      }
+
+      .card-body p{
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        margin: 1rem;
+        color: #4A5567;
+      }
+
+      .card-footer{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        border-top: 1px solid #F2F5F9;
+      }
+
+      .avatar-img{
+        border-radius: 50%;
+        margin: 1rem;
+        border: 5px solid #F2F5F9;
+      }
+
+      .profile-title{
+        /* margin: 0.5rem; */
+      }
+
+      .profile-title .name{
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: #111729;
+      }
+      .profile-title .position{
+        font-size: 0.8rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+      }
+
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 6rem;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        color: rgb(55, 65, 81);
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 320px) {
+        .card-header{
+            font-size: 16px;
+        }
+        .card-header .overlay-img{
+            position: relative;
+            top: -2em;
+        }
+        
+      }
+
+        @media screen and (min-width: 361px){
+            .card-header .overlay-img{
+                top: 12.5rem;
+            }
+        }
+
+        @media screen and (min-width: 400px){
+            .card-header .overlay-img{
+                top: 13.47rem;
+            }
+        }
